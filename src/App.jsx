@@ -7,8 +7,8 @@ import { Route, Routes } from 'react-router-dom'
 import Cart from './components/Cart'
 
 function App() {
-  const [ menu, setMenu ] = useState(data.menu)
-  const [ cart, setCart ] = useState([])
+  const [menu, setMenu] = useState(data.menu)
+  const [cart, setCart] = useState([])
   console.log(cart)
 
   return (
@@ -16,8 +16,8 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path='/' element={<Menu menu={menu} cart={cart} setCart={setCart} />}/>
-          <Route path='/cart' element={<Cart menu={menu} cart={cart} setCart={setCart} />}/>
+          <Route path='/' element={<Menu />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>
       </main>
     </div>
